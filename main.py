@@ -19,8 +19,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 # from langchain_community.vectorstores import Pinecone
 # from langchain_community.embeddings import OpenAIEmbeddings
 
-
-from langchain import PromptTemplate
+from langchain.prompts import PromptTemplate
+# from langchain import PromptTemplate
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 from dotenv import load_dotenv
@@ -121,7 +121,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=GEMINI_API_KEY)
 
-
+# Combine data from documents to readable string format.
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
