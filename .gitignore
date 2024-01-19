@@ -1,0 +1,28 @@
+# .gitignore
+
+# Environment
+.env
+
+
+# Virtual Environment
+
+
+venv/
+
+# Chroma DataBase
+chroma_db/
+
+
+
+
+# C
+/venv/
+venv
+.venv
+
+/chroma_db
+
+/chroma_db/
+# 
+secret.txt
+sensitive-folder/
